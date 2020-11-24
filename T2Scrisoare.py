@@ -1,0 +1,21 @@
+n=int(input())
+m=int(input())
+h=int(input())
+w=int(input())
+c=0
+if(n>m):
+    c=m
+    m=n
+    n=c
+if(h>w):
+    c=w
+    w=h
+    h=c
+c=0
+while(n>h):
+    c+=1
+    n=n/2
+while(m>w):
+    c+=1
+    m=m/2
+print(c)
